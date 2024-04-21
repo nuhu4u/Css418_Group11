@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Section */
+  section {
+    background-color: purple;
+    height: 110px; /* Adjust height as needed */
+    display: flex; /* Use flexbox for potential alignment */
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically */
+  }
+  
+  /* Logo Image */
+  #futpng {
+    width: 5rem; /* Use rem for better responsiveness */
+    height: 5rem; /* Use rem for better responsiveness */
+    margin-right: 2rem; /* Add some margin for spacing */
+  }
+  
+  /* University Name */
+  #FEDERAL {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem; /* Adjust font size as needed */
+  }
+  
+  /* Login Form Container */
+  form {
+    margin: 2rem auto; /* Add some margin for spacing */
+    width: 300px; /* Set a fixed width or consider using percentages */
+    text-align: center;
+  }
+  
+  /* Labels */
+  label {
+    font-weight: bold;
+    display: block; /* Make labels appear on separate lines */
+    margin-bottom: 5px; /* Add some bottom margin */
+  }
+  
+  /* Input Fields */
+  input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; /* Use 100% for full width within the form */
+  }
+  
+  /* Login Button (Improved Styles) */
+  button[type="submit"] {
+    display: block; /* Make the button a block element */
+    width: 100%; /* Use 100% for full width within the form */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none; /* Remove default button border */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Forgot Password Link */
+  a#forgot-password-link {
+    display: block; /* Make the link appear on a separate line */
+    margin-top: 1rem; /* Add some top margin */
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }  

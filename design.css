@@ -1,0 +1,88 @@
+
+ body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+section {
+    background-color: purple;
+    height: 110px;
+
+}
+
+
+#futpng{
+    width: 2cm;
+    height: 2cm;
+}
+#FEDERAL{ 
+    text-align:center;
+    color: white;
+    height: 30cm;
+
+}
+
+
+/*index*/
+.dash {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    min-height: 10vh;
+    background-color: rgba(243, 214, 134, 0.568);
+    text-align:center ;
+
+}
+
+.q{
+    width: 20%;
+    float: left;
+    padding: 40px;
+    background-color: #99a9e0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.q h1{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.he{
+    width: 30%;
+    float: left;
+    padding: 50px;
+    background-color: #99a9e0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sq{
+    width: 30%;
+    float: left;
+    padding:40px;
+   color: #99a9e0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*level*/
+.level{
+    width: 30%;
+    float: left;
+    padding: 50px;
+    color: #99a9e0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* portal*/
+.pot{
+    width: 90%;
+    float: left;
+    padding: 30px;
+    color: #bbc8f3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
