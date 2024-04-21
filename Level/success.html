@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Print Selected Courses</title>
+    <style>
+        /* Add custom print styles */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h2 {
+            color: #444;
+        }
+        table {
+            width: 80%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h2>Selected Courses for Printing</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>COURSE CODE</th>
+                <th>COURSE TITLE</th>
+            </tr>
+        </thead>
+        <tbody id="selectedCoursesTableBody">
+            <!-- JavaScript will populate this section -->
+        </tbody>
+    </table>
+
+    <button onclick="window.print()">Print</button>
+
+    <script>
+        // Retrieve selected courses from localStorage
+        const selectedCourses = JSON.parse(localStorage.getItem('selectedCourses'));
+        const selectedCoursesTableBody = document.getElementById('selectedCoursesTableBody');
+
+        if (selectedCourses) {
+            selectedCourses.forEach((course) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${course.code}</td>
+                    <td>${course.title}</td>
+                `;
+                selectedCoursesTableBody.appendChild(row);
+            });
+        } else {
+            const row = document.createElement('tr');
+            row.innerHTML = `<td colspan="2">No courses selected</td>`;
+            selectedCoursesTableBody.appendChild(row);
+        }
+    </script>
+</body>
+</html>
