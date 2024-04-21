@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matric Level Selection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Matric Level Selection</h1>
+    <form id="selection-form">
+        <label for="matric-number">Matric Number:</label>
+        <input type="text" id="matric-number" name="matric-number" required>
+        <br>
+        <label for="level">Level:</label>
+        <select id="level" name="level" required>
+            <option value="">Select Level</option>
+            <option value="100">100 Level</option>
+            <option value="200">200 Level</option>
+            <option value="300">300 Level</option>
+            <option value="400">400 Level</option>
+            <option value="500">500 Level</option>
+        </select>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="message"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
